@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Random Recipe</string>
+    <string name="instruction">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam, aut cumque dolorem excepturi incidunt inventore natus nesciunt nihil obcaecati omnis pariatur perferendis perspiciatis quas rem ut velit veritatis voluptates!</string>
+    <string name="instructions">Instructions</string>
+    <string name="ingredients">Ingredients</string>
+</resources>

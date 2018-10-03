@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srl_recipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_recipe_thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="212dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/img_dummy" />
+
+            <TextView
+                android:id="@+id/tv_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#333"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Stovetop Eggplant With Harissa, Chickpeas, and Cumin Yogurt" />
+
+            <TextView
+                android:id="@+id/tv_recipe_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#333"
+                tools:text="Vegetarian - American" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/ingredients"
+                android:textColor="#333"
+                android:textStyle="bold" />
+
+            <TableLayout
+                android:id="@+id/tl_recipe_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/instructions"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_recipe_instruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/instruction" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.v4.widget.SwipeRefreshLayout>
